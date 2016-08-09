@@ -14,13 +14,54 @@
         android:layout_height="wrap_content"
         android:text="Hello World wey!"
         android:id="@+id/txtHelo"
-        android:textSize="@dimen/abc_alert_dialog_button_bar_height" />
+        android:textSize="@dimen/abc_alert_dialog_button_bar_height"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
 
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Click Me"
         android:id="@+id/btnOpen"
+        android:onClick="click"
+        android:layout_below="@+id/RbG"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/editText"
         android:layout_below="@+id/txtHelo"
-        android:onClick="click" />
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <RadioGroup
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/RbG"
+        android:layout_below="@+id/editText"
+        android:layout_toRightOf="@+id/btnOpen"
+        android:layout_toEndOf="@+id/btnOpen">
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="RedTea"
+            android:id="@+id/RedTeaBtn"
+            android:checked="false"
+            android:layout_above="@+id/RbG"
+            android:layout_toRightOf="@+id/btnOpen"
+            android:layout_toEndOf="@+id/btnOpen"
+            android:layout_marginBottom="79dp" />
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="greenTea"
+            android:id="@+id/GreenTea"
+            android:checked="false" />
+    </RadioGroup>
+
 </RelativeLayout>
