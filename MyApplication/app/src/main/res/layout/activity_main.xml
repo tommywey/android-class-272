@@ -42,8 +42,9 @@
         android:layout_height="wrap_content"
         android:id="@+id/RbG"
         android:layout_below="@+id/editText"
-        android:layout_toRightOf="@+id/btnOpen"
-        android:layout_toEndOf="@+id/btnOpen">
+        android:orientation="horizontal"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true">
 
         <RadioButton
             android:layout_width="wrap_content"
@@ -54,14 +55,19 @@
             android:layout_above="@+id/RbG"
             android:layout_toRightOf="@+id/btnOpen"
             android:layout_toEndOf="@+id/btnOpen"
-            android:layout_marginBottom="79dp" />
+            android:layout_marginBottom="0dp"
+            android:drawableRight = "@drawable/blacktea"
+            />
+
 
         <RadioButton
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="greenTea"
             android:id="@+id/GreenTea"
-            android:checked="false" />
+            android:checked="false"
+            android:drawableRight = "@drawable/greentea"
+            />
     </RadioGroup>
 
 </RelativeLayout>

@@ -2,6 +2,7 @@ package com.example.user.myapplication;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.view.View;
 import android.widget.EditText;
 import android.widget.RadioGroup;
 import android.widget.TextView;
@@ -38,11 +39,12 @@ public class MainActivity extends AppCompatActivity {
 
     }
 
-    public void click(view view)
+    public void click(View view)
     {
         String text= editText.getText().toString();
         text = text + "Order. " + drink;
 
         textView.setText(text);
+        editText.setText("");
     }
 }
